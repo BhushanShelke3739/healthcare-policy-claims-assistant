@@ -1,0 +1,50 @@
+# =============================================================================
+# Pre-commit hooks — runs ruff + black + mypy on staged files.
+#
+# Optional but recommended. Install with:
+#     pip install pre-commit         # (or: pip install -r backend/requirements-dev.txt)
+#     pre-commit install             # registers the git hook
+#
+# Once installed, every `git commit` runs the hooks against the staged files.
+# Skip a single commit with `git commit --no-verify` (use sparingly).
+# Run on the whole repo with `pre-commit run --all-files`.
+# =============================================================================
+
+repos:
+  # ---- Hygiene ----------------------------------------------------------
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: '\.md$'   # markdown uses trailing whitespace for line breaks
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=2000]   # 2 MB cap; covers code + small fixtures
+
+  # ---- Ruff — lint + import sort + format -------------------------------
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.7.4
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+        files: ^backend/
+      - id: ruff-format
+        files: ^backend/
+
+  # ---- Mypy — static type checking --------------------------------------
+  # Slower than ruff; runs on commit but won't auto-fix. Disable in your
+  # local install with `SKIP=mypy git commit ...` if it gets in the way.
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.13.0
+    hooks:
+      - id: mypy
+        files: ^backend/app/
+        additional_dependencies:
+          - pydantic
+          - pydantic-settings
+          - sqlalchemy
+          - fastapi
+        args: ["--config-file=backend/pyproject.toml"]

@@ -1,0 +1,93 @@
+# =============================================================================
+# Docker Compose stack for Healthcare Policy & Claims Assistant
+#
+# Services
+#   db       : PostgreSQL 16 with the pgvector extension preinstalled
+#   backend  : FastAPI application (reload enabled for local dev)
+#   adminer  : Lightweight web UI for browsing/querying the database.
+#              Opt-in via `--profile tools` so it doesn't start by default
+#              (it isn't part of the application — just a dev convenience).
+#
+# Usage
+#   docker compose up --build                       # db + backend
+#   docker compose --profile tools up -d adminer    # add the DB browser
+#   docker compose exec backend alembic upgrade head
+#   docker compose exec backend pytest -v
+# =============================================================================
+
+services:
+  db:
+    # pgvector/pgvector image ships Postgres + the vector extension together.
+    # In Phase 1 we only use Postgres; the extension is enabled by an Alembic
+    # migration in the very first revision so it's ready when Phase 3 lands.
+    image: pgvector/pgvector:pg16
+    container_name: hpca-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-hpca}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-hpca_password}
+      POSTGRES_DB: ${POSTGRES_DB:-hpca}
+    ports:
+      # Expose locally so you can connect with psql / a DB GUI if you want.
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      # `pg_isready` returns 0 when the server is accepting connections.
+      # The backend uses `depends_on: condition: service_healthy` so it won't
+      # try to connect before Postgres is ready.
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-hpca} -d ${POSTGRES_DB:-hpca}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  adminer:
+    # Tiny single-binary database browser. Opt-in: only starts when you
+    # pass `--profile tools` (or `docker compose up adminer` explicitly).
+    image: adminer:4-standalone
+    container_name: hpca-adminer
+    restart: unless-stopped
+    profiles: ["tools"]
+    ports:
+      # 8081 to avoid colliding with the FastAPI backend on 8000.
+      - "8081:8080"
+    environment:
+      # Pre-fills the "Server" field on the login page so you don't have
+      # to remember the compose service name.
+      ADMINER_DEFAULT_SERVER: db
+      # Adminer ships several themes; "pepa-linha-dark" is easier on the eyes.
+      ADMINER_DESIGN: pepa-linha-dark
+    depends_on:
+      db:
+        condition: service_healthy
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: hpca-backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # Override the host so the backend reaches Postgres via the compose
+      # network rather than localhost.
+      POSTGRES_HOST: db
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-hpca}:${POSTGRES_PASSWORD:-hpca_password}@db:5432/${POSTGRES_DB:-hpca}
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    volumes:
+      # Mount the source so edits trigger uvicorn's --reload.
+      - ./backend:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    command: >
+      uvicorn app.main:app
+      --host 0.0.0.0
+      --port 8000
+      --reload
+
+volumes:
+  postgres_data:
+    name: hpca_postgres_data

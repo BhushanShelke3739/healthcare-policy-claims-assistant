@@ -1,0 +1,102 @@
+SYNTHETIC POLICY — FOR DEMO USE ONLY. NO REAL PHI OR PII.
+
+Title: HIPAA Minimum Necessary Standard Policy
+Plan: HealthFirst Cooperative (Demo)
+Effective Date: 2026-01-01
+Document Owner: Privacy & Compliance Office
+
+1. Purpose
+
+This policy implements the HIPAA Privacy Rule "minimum necessary"
+standard at HealthFirst Cooperative. The standard requires that
+Protected Health Information (PHI) used, disclosed, or requested be
+limited to the minimum amount reasonably necessary to accomplish the
+intended purpose.
+
+2. Scope
+
+Applies to all workforce members, business associates, and downstream
+contractors who handle PHI on behalf of HealthFirst Cooperative,
+including claims adjudicators, customer service representatives, care
+managers, and analytics staff.
+
+3. Where the Minimum Necessary Standard Does Not Apply
+
+The standard does NOT apply to the following uses or disclosures:
+  3.1 Disclosures to or requests by a health care provider for
+      treatment purposes.
+  3.2 Disclosures to the individual who is the subject of the PHI.
+  3.3 Uses or disclosures made pursuant to a valid HIPAA Authorization
+      signed by the individual.
+  3.4 Disclosures required by law (e.g., subpoena, court order).
+  3.5 Uses or disclosures to the Department of Health and Human Services
+      for compliance enforcement.
+  3.6 Uses or disclosures required for compliance with the HIPAA
+      regulations themselves.
+
+4. Role-Based Access Tiers
+
+Access to PHI is granted on the basis of job function. Tier
+assignments are reviewed quarterly.
+
+  Tier 1 — Limited Identifier Access
+    Operations staff who require only member ID, plan ID, and benefit
+    summary information.
+
+  Tier 2 — Claim-Level Access
+    Claims adjudicators and customer service representatives. Includes
+    diagnosis codes, procedure codes, and EOB-equivalent data.
+
+  Tier 3 — Clinical Record Access
+    Utilization Management nurses, medical directors, and care managers.
+    Includes chart notes and clinical records relevant to the case.
+
+  Tier 4 — Investigative Access
+    Special Investigations Unit (fraud, waste, and abuse). Access is
+    case-scoped and time-bounded.
+
+5. Routine Disclosures
+
+For routine, recurring disclosures (e.g., monthly enrollment files to a
+broker), a Minimum Necessary protocol is documented at the
+disclosure-class level and reviewed annually. The protocol specifies the
+data elements disclosed, the recipient, and the safeguards in place.
+
+6. Non-Routine Requests
+
+For non-routine requests, the Privacy Office performs an individualized
+assessment of:
+  6.1 Whether the requestor has authority to receive the PHI.
+  6.2 The minimum data elements necessary to fulfill the request.
+  6.3 Appropriate transmission safeguards (e.g., secure email,
+      encrypted SFTP).
+
+A non-routine request is approved or denied within ten (10) business
+days. If denied, the requestor receives a written explanation and may
+escalate to the Chief Privacy Officer within fifteen (15) business days.
+
+7. De-Identification and Limited Data Sets
+
+For analytics and research, PHI must be de-identified per 45 CFR
+164.514(b) or transformed into a limited data set with a Data Use
+Agreement on file before any release.
+
+8. Audit and Monitoring
+
+The Privacy Office audits PHI access on a sample basis monthly. All
+workforce members must complete annual privacy training; failure to
+complete training within thirty (30) days of the assigned deadline
+results in temporary suspension of PHI access.
+
+9. Sanctions
+
+Violations of the Minimum Necessary Standard are addressed under the
+Workforce Sanctions Policy. Sanctions range from re-training and
+written warning to termination, depending on intent and impact.
+
+10. Reporting
+
+Suspected violations must be reported to the Privacy Office within
+twenty-four (24) hours of discovery. The Privacy Office investigates,
+documents findings, and notifies affected individuals if a reportable
+breach is confirmed.

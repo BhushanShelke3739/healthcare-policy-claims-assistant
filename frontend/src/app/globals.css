@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+  /* Keep long policy chunks from blowing out flex containers */
+  pre, code {
+    @apply font-mono text-xs;
+  }
+}

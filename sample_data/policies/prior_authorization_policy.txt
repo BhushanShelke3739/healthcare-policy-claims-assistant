@@ -1,0 +1,92 @@
+SYNTHETIC POLICY — FOR DEMO USE ONLY. NO REAL PHI OR PII.
+
+Title: Prior Authorization Policy
+Plan: HealthFirst Cooperative (Demo)
+Effective Date: 2026-01-01
+Document Owner: Utilization Management
+
+1. Purpose
+
+This policy describes when Prior Authorization (PA) is required, how to
+submit a request, decision timelines, and how to appeal a PA denial.
+Prior Authorization is a determination that a covered service is
+medically necessary and benefit-eligible before the service is provided.
+
+2. Scope
+
+Applies to all in-network and out-of-network providers serving members of
+the HealthFirst Cooperative commercial and Medicare Advantage plans.
+
+3. Services Requiring Prior Authorization
+
+The following service categories require PA before they are rendered:
+  3.1 Advanced imaging: MRI, CT, PET, and nuclear cardiology studies.
+  3.2 Inpatient admissions (elective and scheduled).
+  3.3 Outpatient surgeries performed in a hospital setting.
+  3.4 Specialty injectable and infusion drugs on the formulary's PA list.
+  3.5 Durable medical equipment with a billed amount exceeding $1,500.
+  3.6 Home health services beyond 14 visits.
+  3.7 Non-emergency air ambulance transport.
+
+Emergency services and post-stabilization care never require PA.
+
+4. Submission Channels
+
+Providers must submit PA requests through one of:
+  4.1 Provider Portal (preferred): real-time status updates.
+  4.2 Secure fax to (555) 010-1234.
+  4.3 Electronic Data Interchange (X12N 278 transaction).
+
+Phone requests are accepted only for urgent / expedited reviews.
+
+5. Required Information
+
+A complete PA request includes:
+  - Member ID, date of birth, and date of service (proposed).
+  - Requesting provider NPI and servicing provider NPI.
+  - CPT/HCPCS code(s) and ICD-10 diagnosis code(s).
+  - Clinical justification with relevant chart notes.
+  - Failed conservative treatments where applicable.
+
+Incomplete requests are pended for additional information. The clinical
+review clock pauses while the request is pended.
+
+6. Decision Timelines
+
+  6.1 Standard review: a determination is issued within five (5) business
+      days of receipt of a complete request.
+  6.2 Expedited / urgent review: a determination is issued within
+      twenty-four (24) hours when delay would jeopardize the member's
+      life, health, or ability to regain maximum function.
+  6.3 Concurrent review (during an inpatient stay): a determination is
+      issued within twenty-four (24) hours.
+
+7. Communication of Decisions
+
+Approval determinations are communicated to the requesting provider
+electronically within one business day of the decision. Denial
+determinations are communicated to both the provider and the member in
+writing, and include:
+  - The specific reason for denial.
+  - The clinical criteria applied.
+  - The member's right to appeal and the timeframe to file.
+  - The reviewer's credentials (board-certified physician for adverse
+    medical-necessity determinations).
+
+8. Appealing a PA Denial
+
+A PA denial may be appealed under the Appeal Process Policy. The first
+level of appeal must be filed within sixty (60) calendar days of the
+denial notice. Expedited appeals are available for urgent care
+situations and are decided within seventy-two (72) hours.
+
+9. Exclusions
+
+PA is not a guarantee of payment. Payment is contingent on member
+eligibility on the date of service, the service being a covered benefit,
+and the absence of claim-level edits (e.g., bundling, modifier rules).
+
+10. Recordkeeping
+
+PA decisions, the underlying clinical criteria version, and the
+reviewer's credentials are retained for a minimum of ten (10) years.

@@ -1,0 +1,24 @@
+# =============================================================================
+# Dev-only dependencies for Phase 8 (Testing & quality).
+#
+# Install with:
+#     pip install -r requirements-dev.txt
+#
+# `requirements.txt` is included so a fresh venv only needs this one file.
+# CI / production images install requirements.txt only — never -dev.
+# =============================================================================
+
+-r requirements.txt
+
+# --- Lint + format ---
+ruff==0.7.4                   # linter + import sorter + formatter (one binary)
+black==24.10.0                # opinionated formatter; ruff format is compatible
+
+# --- Type checking ---
+mypy==1.13.0                  # static type checker; configured loosely in pyproject.toml
+
+# --- Coverage ---
+pytest-cov==6.0.0             # coverage reporter for pytest
+
+# --- Pre-commit hooks (optional but recommended) ---
+pre-commit==4.0.1             # runs ruff/black/mypy on staged files

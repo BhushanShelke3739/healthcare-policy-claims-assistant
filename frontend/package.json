@@ -1,0 +1,36 @@
+{
+  "name": "hpca-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Demo UI for Healthcare Policy & Claims Assistant — Next.js + TypeScript + Tailwind",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css,md}\"",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run lint && npm run format:check && npm run typecheck"
+  },
+  "dependencies": {
+    "next": "14.2.18",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.10",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "autoprefixer": "10.4.20",
+    "eslint": "8.57.1",
+    "eslint-config-next": "14.2.18",
+    "eslint-config-prettier": "9.1.0",
+    "postcss": "8.4.49",
+    "prettier": "3.3.3",
+    "prettier-plugin-tailwindcss": "0.6.8",
+    "tailwindcss": "3.4.14",
+    "typescript": "5.6.3"
+  }
+}

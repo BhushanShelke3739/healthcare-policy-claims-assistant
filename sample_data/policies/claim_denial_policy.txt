@@ -1,0 +1,99 @@
+SYNTHETIC POLICY — FOR DEMO USE ONLY. NO REAL PHI OR PII.
+
+Title: Claim Denial Policy
+Plan: HealthFirst Cooperative (Demo)
+Effective Date: 2026-01-01
+Document Owner: Claims Operations
+
+1. Purpose
+
+This policy describes how claim denials are issued, the categories of
+denial reasons, member and provider notification requirements, and the
+internal review pathway that precedes a formal appeal.
+
+2. Scope
+
+Applies to all medical, behavioral health, and ancillary claims
+adjudicated under HealthFirst Cooperative benefit plans.
+
+3. Denial Categories
+
+Claim denials fall into one of the following categories:
+
+  3.1 Administrative Denial
+      - Missing or invalid member ID.
+      - Service date outside the eligibility period.
+      - Provider not credentialed on the date of service.
+      - Duplicate of a previously adjudicated claim.
+
+  3.2 Coverage Denial
+      - Service is not a covered benefit under the member's plan.
+      - Benefit maximum has been reached.
+      - Specific exclusion (e.g., cosmetic, experimental, custodial).
+
+  3.3 Medical Necessity Denial
+      - The reviewed clinical record does not meet the criteria for the
+        requested service.
+
+  3.4 Authorization Denial
+      - Prior authorization was required but was not obtained.
+      - Service performed exceeds the scope of an issued authorization.
+
+  3.5 Coordination of Benefits (COB) Denial
+      - Another payer is primary; the primary explanation of benefits is
+        required before HealthFirst will adjudicate.
+
+4. Denial Reason Codes
+
+Each denial includes a HealthFirst denial code in the form HF-XXX:
+  - HF-001  Missing/invalid member ID.
+  - HF-014  Service not a covered benefit.
+  - HF-022  Prior authorization not on file.
+  - HF-031  Medical necessity criteria not met.
+  - HF-045  Primary payer EOB required.
+  - HF-058  Duplicate claim.
+  - HF-072  Provider not credentialed on date of service.
+
+5. Member Notification
+
+For every denial that creates a member financial responsibility, an
+Explanation of Benefits (EOB) is mailed to the member's address on file
+within fifteen (15) calendar days of the adjudication date. The EOB
+contains:
+  - Service date, provider name, and procedure description.
+  - Submitted, allowed, and member-responsibility amounts.
+  - Denial code, plain-language reason, and the policy section cited.
+  - Instructions to request an internal review or file an appeal.
+
+6. Provider Notification
+
+Providers receive an electronic Remittance Advice (X12N 835) within five
+(5) business days of adjudication. The 835 contains Claim Adjustment
+Reason Codes (CARC) and Remittance Advice Remark Codes (RARC) mapped
+one-to-one to the HealthFirst HF-XXX codes.
+
+7. Internal Review
+
+A provider may request internal review of an administrative or COB
+denial without filing a formal appeal. The internal review request must
+be submitted within thirty (30) calendar days of the Remittance Advice
+date and may be submitted through the Provider Portal or by phone.
+
+Internal review is limited to:
+  - Correcting demographic, coding, or COB errors.
+  - Resubmitting claims with attached documentation.
+
+Internal review is not available for medical necessity denials — those
+must be appealed under the Appeal Process Policy.
+
+8. Member Right to Appeal
+
+For every denial, the member retains the right to file a formal appeal
+under the Appeal Process Policy. The appeal must be filed within sixty
+(60) calendar days of the denial notice date.
+
+9. Documentation
+
+All denial determinations, the policy section cited, the adjudicator's
+identifier, and the date of decision are retained in the claim record
+for ten (10) years.

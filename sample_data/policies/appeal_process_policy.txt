@@ -1,0 +1,104 @@
+SYNTHETIC POLICY — FOR DEMO USE ONLY. NO REAL PHI OR PII.
+
+Title: Appeal Process Policy
+Plan: HealthFirst Cooperative (Demo)
+Effective Date: 2026-01-01
+Document Owner: Member Appeals & Grievances
+
+1. Purpose
+
+This policy describes the three-level appeal process available to
+members and authorized representatives when a claim or prior
+authorization request is denied. It sets the timeframes for filing
+appeals, the timeframes for decisions, the documentation requirements,
+and the option to request an external review.
+
+2. Definitions
+
+  2.1 Appeal — a member's (or authorized representative's) formal
+      request to reconsider an adverse benefit determination.
+  2.2 Adverse Benefit Determination — a denial, reduction, termination,
+      or non-payment of a benefit, including a denial of prior
+      authorization or a denial based on medical necessity.
+  2.3 Expedited Appeal — an appeal for which the standard timeframe
+      would seriously jeopardize the member's life, health, or ability
+      to regain maximum function.
+
+3. Levels of Appeal
+
+  3.1 First-Level Appeal (Internal)
+      - Filing window: within sixty (60) calendar days of the denial
+        notice.
+      - Decision window: within thirty (30) calendar days of receipt of
+        a complete appeal for pre-service claims; within sixty (60)
+        calendar days for post-service claims.
+      - Reviewed by a qualified individual who was not involved in the
+        original determination.
+
+  3.2 Second-Level Appeal (Internal)
+      - Filing window: within thirty (30) calendar days of the
+        first-level decision notice.
+      - Decision window: within thirty (30) calendar days of receipt.
+      - Reviewed by a panel that includes a board-certified specialist
+        in the same or similar specialty for medical-necessity appeals.
+
+  3.3 External Review (Independent Review Organization)
+      - Filing window: within sixty (60) calendar days of the
+        second-level decision notice (or earlier if internal levels
+        are exhausted).
+      - Decision window: within forty-five (45) calendar days of the
+        Independent Review Organization's (IRO) receipt of the request.
+      - The IRO is contracted independent of HealthFirst and its
+        decision is binding on the plan.
+
+4. Expedited Appeals
+
+For expedited appeals:
+  4.1 May be filed by phone, in writing, or through the Member Portal.
+  4.2 Decision must be issued within seventy-two (72) hours of receipt.
+  4.3 External expedited review must be decided within seventy-two
+      (72) hours by the IRO.
+
+A request is treated as expedited if a treating physician certifies in
+writing that the standard timeframe would seriously jeopardize the
+member's life, health, or ability to regain maximum function.
+
+5. How to File an Appeal
+
+A complete appeal includes:
+  - Member name, ID, and date of birth.
+  - The claim number or PA reference number being appealed.
+  - A copy of the denial notice.
+  - A written statement of why the determination should be overturned.
+  - Any supporting clinical records, peer-reviewed literature, or
+    physician statements.
+
+Appeals may be filed:
+  - Through the Member Portal.
+  - By mail to: HealthFirst Appeals, PO Box 0000, City, State 00000.
+  - By secure fax to (555) 010-2345.
+
+6. Acknowledgement
+
+HealthFirst sends a written acknowledgement of every appeal within
+five (5) business days of receipt.
+
+7. Documentation Provided to the Member
+
+Upon request and free of charge, HealthFirst provides:
+  - Copies of all documents, records, and other information relevant
+    to the claim.
+  - The specific internal rule, guideline, or protocol relied upon.
+  - The clinical criteria applied for medical-necessity determinations.
+
+8. Concurrent Care
+
+If the appeal concerns the termination or reduction of a previously
+approved course of treatment, the existing course of treatment continues
+during the appeal and the appeal is decided before the previously
+approved service ends.
+
+9. Recordkeeping
+
+Appeal records, including the determination, the reviewer's credentials,
+and the criteria applied, are retained for a minimum of ten (10) years.

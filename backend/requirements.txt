@@ -1,0 +1,46 @@
+# =============================================================================
+# Backend dependencies — Phase 1 (Foundation)
+#
+# Pinned to major versions for reproducibility. Subsequent phases add:
+#   Phase 2: pypdf, python-multipart (already here for FastAPI file uploads)
+#   Phase 3: openai, sentence-transformers, numpy
+#   Phase 4: langchain (or llama-index)
+#   Phase 5: langgraph
+#   Phase 6: ragas (optional), datasets (optional)
+# =============================================================================
+
+# --- Web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20      # multipart/form-data for file uploads (Phase 2)
+
+# --- Document ingestion (Phase 2) ---
+pypdf==5.1.0                  # PDF text extraction
+
+# --- Embeddings + retrieval (Phase 3) ---
+# Range, not a hard pin: 1.40 is the minimum that supports
+# `client.beta.chat.completions.parse(...)` used by the strict-mode chat
+# provider; anything 1.x works for the json_object mode.
+openai>=1.40,<2.0             # OpenAI-compatible client (also works with vLLM / Ollama / LM Studio)
+
+# --- Agents (Phase 5) ---
+langgraph>=0.2,<1.0           # graph-structured agent workflows
+
+# --- Observability + security (Phase 9) ---
+prometheus-client==0.21.1     # /metrics exposition (counters, histograms)
+PyJWT==2.10.1                 # JWT encode/verify for the auth placeholder
+
+# --- Configuration ---
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# --- Database ---
+sqlalchemy==2.0.36
+psycopg2-binary==2.9.10
+alembic==1.14.0
+pgvector==0.3.6               # provides Vector column type for SQLAlchemy
+
+# --- Testing ---
+pytest==8.3.4
+pytest-asyncio==0.25.0
+httpx==0.28.1                 # async HTTP client used by FastAPI TestClient

@@ -1,0 +1,134 @@
+{
+  "name": "healthcare_policy_eval_v1",
+  "description": "Initial evaluation set for the six synthetic policy documents. Mix of direct factual lookups, paraphrases, identifier-based queries, and one out-of-scope question to verify the refusal path. Synthetic data only.",
+  "items": [
+    {
+      "id": "appeal-window-first-level",
+      "question": "How long do I have to file a first-level appeal?",
+      "expected_answer": "Within 60 calendar days of the denial notice.",
+      "expected_document": "Appeal Process Policy",
+      "expected_keywords": ["60", "sixty", "calendar days", "denial notice"]
+    },
+    {
+      "id": "appeal-expedited-timeline",
+      "question": "How fast must an expedited appeal be decided?",
+      "expected_answer": "Within 72 hours of receipt.",
+      "expected_document": "Appeal Process Policy",
+      "expected_keywords": ["72", "seventy-two", "hours", "expedited"]
+    },
+    {
+      "id": "appeal-external-review-window",
+      "question": "How many days does an external Independent Review Organization have to issue a decision?",
+      "expected_answer": "Within 45 calendar days of the IRO's receipt of the request.",
+      "expected_document": "Appeal Process Policy",
+      "expected_keywords": ["45", "forty-five", "IRO", "external review"]
+    },
+    {
+      "id": "denial-code-hf022",
+      "question": "What does denial code HF-022 mean?",
+      "expected_answer": "Prior authorization was required but not on file at the time of service.",
+      "expected_document": "Claim Denial Policy",
+      "expected_keywords": ["HF-022", "prior authorization", "not on file"]
+    },
+    {
+      "id": "denial-code-hf031",
+      "question": "What is HF-031 used for?",
+      "expected_answer": "Medical necessity criteria not met.",
+      "expected_document": "Claim Denial Policy",
+      "expected_keywords": ["HF-031", "medical necessity"]
+    },
+    {
+      "id": "denial-internal-review-window",
+      "question": "How long does a provider have to request internal review of a claim denial?",
+      "expected_answer": "Within 30 calendar days of the Remittance Advice date.",
+      "expected_document": "Claim Denial Policy",
+      "expected_keywords": ["30", "thirty", "calendar days", "Remittance Advice"]
+    },
+    {
+      "id": "pa-imaging-services",
+      "question": "Which imaging services require prior authorization?",
+      "expected_answer": "MRI, CT, PET, and nuclear cardiology studies.",
+      "expected_document": "Prior Authorization Policy",
+      "expected_keywords": ["MRI", "CT", "PET", "advanced imaging"]
+    },
+    {
+      "id": "pa-urgent-decision-window",
+      "question": "What is the decision timeline for an urgent prior authorization?",
+      "expected_answer": "Within 24 hours.",
+      "expected_document": "Prior Authorization Policy",
+      "expected_keywords": ["24", "twenty-four", "hours", "urgent", "expedited"]
+    },
+    {
+      "id": "pa-standard-decision-window",
+      "question": "What is the standard prior authorization review timeline?",
+      "expected_answer": "Within 5 business days of receipt of a complete request.",
+      "expected_document": "Prior Authorization Policy",
+      "expected_keywords": ["5", "five", "business days", "standard"]
+    },
+    {
+      "id": "hipaa-treatment-exception",
+      "question": "Does the HIPAA minimum necessary standard apply when disclosing PHI to another provider for treatment?",
+      "expected_answer": "No. The minimum necessary standard does not apply to disclosures for treatment.",
+      "expected_document": "HIPAA Minimum Necessary Policy",
+      "expected_keywords": ["treatment", "does not apply", "minimum necessary"]
+    },
+    {
+      "id": "hipaa-non-routine-window",
+      "question": "How long does the Privacy Office have to approve or deny a non-routine PHI request?",
+      "expected_answer": "Within 10 business days.",
+      "expected_document": "HIPAA Minimum Necessary Policy",
+      "expected_keywords": ["10", "ten", "business days", "non-routine"]
+    },
+    {
+      "id": "oon-balance-billing-emergency",
+      "question": "Can a provider balance bill a member for emergency services rendered out-of-network?",
+      "expected_answer": "No. Members are held harmless from balance billing for emergency services and pay in-network cost-sharing.",
+      "expected_document": "Out-Of-Network Claim Policy",
+      "expected_keywords": ["emergency", "balance billing", "in-network", "held harmless"]
+    },
+    {
+      "id": "oon-timely-filing-window",
+      "question": "What is the timely filing window for out-of-network claims?",
+      "expected_answer": "Within 180 calendar days of the date of service.",
+      "expected_document": "Out-Of-Network Claim Policy",
+      "expected_keywords": ["180", "calendar days", "timely filing"]
+    },
+    {
+      "id": "telehealth-modifier",
+      "question": "What modifier is required for synchronous audio-video telehealth visits?",
+      "expected_answer": "Modifier 95.",
+      "expected_document": "Telehealth Billing Policy",
+      "expected_keywords": ["95", "modifier", "synchronous"]
+    },
+    {
+      "id": "telehealth-pos-codes",
+      "question": "What place-of-service code is used when a member receives telehealth at home?",
+      "expected_answer": "POS 10.",
+      "expected_document": "Telehealth Billing Policy",
+      "expected_keywords": ["10", "POS", "home"]
+    },
+    {
+      "id": "telehealth-audio-only-bh",
+      "question": "Are audio-only behavioral health telehealth visits reimbursed at parity?",
+      "expected_answer": "Yes. Audio-only behavioral health services are reimbursed at parity with audio-visual telehealth.",
+      "expected_document": "Telehealth Billing Policy",
+      "expected_keywords": ["audio-only", "behavioral health", "parity"]
+    },
+    {
+      "id": "out-of-scope-france",
+      "question": "What is the capital of France?",
+      "expected_answer": null,
+      "expected_document": null,
+      "expected_keywords": [],
+      "expected_refusal": true
+    },
+    {
+      "id": "out-of-scope-medical-advice",
+      "question": "Should I take ibuprofen or acetaminophen for my headache?",
+      "expected_answer": null,
+      "expected_document": null,
+      "expected_keywords": [],
+      "expected_refusal": true
+    }
+  ]
+}

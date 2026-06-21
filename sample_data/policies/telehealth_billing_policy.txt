@@ -1,0 +1,119 @@
+SYNTHETIC POLICY — FOR DEMO USE ONLY. NO REAL PHI OR PII.
+
+Title: Telehealth Billing Policy
+Plan: HealthFirst Cooperative (Demo)
+Effective Date: 2026-01-01
+Document Owner: Provider Reimbursement
+
+1. Purpose
+
+This policy describes how telehealth services are reimbursed under
+HealthFirst Cooperative plans, the eligible service categories, the
+required claim modifiers and place-of-service (POS) codes, documentation
+expectations, and the rules for audio-only encounters.
+
+2. Definitions
+
+  2.1 Telehealth — the use of synchronous, two-way, real-time
+      interactive audio-visual technology to deliver health care from a
+      distant site provider to a member at an originating site.
+  2.2 Audio-Only Telehealth — a synchronous interactive encounter
+      conducted via telephone only, without a video component.
+  2.3 Store-and-Forward — the asynchronous transmission of clinical
+      data (e.g., images) from an originating site to a distant site
+      for later review.
+
+3. Eligible Services
+
+The following service categories are eligible for reimbursement when
+furnished via telehealth, subject to medical necessity:
+
+  3.1 Office and other outpatient evaluation and management (E/M) visits.
+  3.2 Behavioral health services, including psychotherapy and
+      medication management.
+  3.3 Chronic disease management visits.
+  3.4 Speech-language pathology, occupational therapy, and physical
+      therapy services for assessment and re-evaluation only.
+  3.5 Nutrition counseling and diabetes self-management training.
+  3.6 Lactation counseling.
+
+Procedures requiring physical examination, in-person specimen
+collection, or hands-on intervention are not eligible.
+
+4. Required Modifiers
+
+Telehealth claims must include one of the following modifiers:
+  - 95   Synchronous telehealth via real-time interactive
+         audio-and-video.
+  - 93   Audio-only telehealth.
+  - GT   Synchronous telehealth (legacy; accepted on institutional
+         claims).
+  - FQ   Audio-only telehealth (behavioral health institutional claims).
+
+A telehealth claim without an appropriate modifier is denied with
+HF-067 ("Modifier required for telehealth").
+
+5. Place-of-Service Codes
+
+The following POS codes are accepted on telehealth professional claims:
+  - 02   Telehealth — patient not in their home.
+  - 10   Telehealth — patient in their home.
+
+Where POS 02 or 10 is used, the modifier requirement in Section 4
+still applies.
+
+6. Audio-Only Telehealth
+
+Audio-only telehealth is reimbursed only when:
+  6.1 The service falls within an audio-only eligible category (see the
+      published Audio-Only List), or
+  6.2 The member declined or could not access a video-capable device,
+      AND
+  6.3 The provider documents in the chart the reason the encounter was
+      audio-only.
+
+Audio-only behavioral health services are reimbursed at parity with
+audio-visual telehealth.
+
+7. Reimbursement Parity
+
+Eligible telehealth services are reimbursed at the same rate as the
+in-person equivalent of the same CPT/HCPCS code, subject to the
+applicable contractual fee schedule.
+
+8. Member Cost-Sharing
+
+Telehealth services are subject to the same cost-sharing as the
+in-person equivalent under the member's benefit plan. Cost-sharing for
+preventive services delivered via telehealth is waived where the
+in-person preventive service is provided at no cost.
+
+9. Documentation Requirements
+
+The medical record must contain:
+  - The originating site location.
+  - The distant site location.
+  - The modality (audio-visual, audio-only).
+  - The clinical reason for using telehealth, when an in-person visit
+    would be the default standard of care.
+  - The member's verbal or written consent to receive telehealth
+    services.
+
+10. Cross-State Licensure
+
+Distant-site providers must be licensed in the state in which the
+member is physically located at the time of service. Claims from
+providers without appropriate licensure are denied with HF-074
+("Provider not licensed in member's state of service").
+
+11. Store-and-Forward
+
+Store-and-forward services are not reimbursed under this policy except
+for specific dermatology and radiology consultations listed on the
+Store-and-Forward Eligible List.
+
+12. Audit
+
+Telehealth claims are subject to post-payment audit. Records must be
+retained for ten (10) years and produced within thirty (30) calendar
+days of a documentation request.

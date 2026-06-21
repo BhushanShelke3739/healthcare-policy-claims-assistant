@@ -1,0 +1,16 @@
+Alembic migrations for Healthcare Policy & Claims Assistant.
+
+Common commands (run from the `backend/` directory, or via
+`docker compose exec backend ...`):
+
+  alembic upgrade head               # apply all pending migrations
+  alembic downgrade -1               # roll back the last migration
+  alembic revision --autogenerate -m "describe change"
+  alembic current                    # show the current revision
+  alembic history                    # list the revision graph
+
+Notes
+  * env.py reads DATABASE_URL from app settings, so you don't need to
+    edit alembic.ini.
+  * The pgvector extension is enabled by the initial migration; you don't
+    need to install it manually inside the database.
