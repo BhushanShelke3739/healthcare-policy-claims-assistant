@@ -6,10 +6,7 @@ generate grounded answers with citations, and run agentic workflows such as
 policy lookup, claim issue triage, document comparison, and compliance
 checklist generation.
 
-> **Picking this up in a new chat or onboarding a teammate?**
-> Read [HANDOFF.md](HANDOFF.md) first — it's a self-contained context
-> dump (current phase, live setup, conventions, what's next) designed
-> to be pasteable into a fresh assistant session.
+
 
 > **Status: Phase 8 — Testing & quality complete.** Backend, frontend,
 > retrieval, RAG, agents, evaluation, and quality gates all working
