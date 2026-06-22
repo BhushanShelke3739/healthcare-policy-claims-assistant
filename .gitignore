@@ -76,3 +76,5 @@ postgres_data/
 
 # Uploaded documents (synthetic only — kept out of git by default)
 uploads/
+
+HANDOFF.md
